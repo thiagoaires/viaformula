@@ -1,0 +1,30 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+        <head>
+                <title>E-mail com arquivo anexo</title>
+                <script language="JavaScript">
+                        <!--
+                        function teste(){
+                        if (document.form.anexo.value=="") {
+                        alert("É preciso selecionar um arquivo para o Upload!")
+                        document.form.anexo.focus()
+                        return false
+                        }
+                        }
+                        //-->
+                </script>
+        </head>
+        <body>
+
+
+<form name="form" method="post" action="anexa.php" enctype="multipart/form-data" onsubmit="return teste()">
+Nome:<br>
+<input type="text" name="nome"><br>
+Arquivo: <br>
+<input type="file" name="anexo[]"><br>
+
+<input type="submit" name="botao" value="enviar"><br>
+</form>
+
+</body>
+</html>
